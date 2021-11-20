@@ -3,9 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "npm-run-all --parallel serve socket",
     "serve": "vue-cli-service serve",
-    "socket": "nodemon ./src/socket/index.js",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -20,24 +18,16 @@
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "ant-design-vue": "^1.7.2",
-    "echarts": "^5.0.2",
     "image-webpack-loader": "^7.0.1",
     "js-cookie": "^2.2.1",
     "js-md5": "^0.7.3",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "node-sass": "^4.12.0",
-    "nodemon": "^2.0.7",
-    "npm-check": "^5.9.2",
-    "npm-run-all": "^4.1.5",
-    "pdfjs-dist": "^2.7.570",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
     "uglifyjs-webpack-plugin": "^2.2.0",
-    "vue-pdf": "^4.2.0",
-    "vue-template-compiler": "^2.6.11",
-    "ws": "^7.4.4"
+    "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
     "> 1%",

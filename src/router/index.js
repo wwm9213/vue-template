@@ -1,59 +1,36 @@
 /*
  * @Date: 2021-04-09 11:06:25
  * @Author: wwm
- * @LastEditTime: 2021-04-19 15:49:17
+ * @LastEditTime: 2021-11-20 19:00:14
  * @LastEditors: wwm
  * @Description: ...
  */
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import tokenInfo from "@/utils/tokenInfo";
+import tokenInfo from '@/utils/tokenInfo';
 Vue.use(VueRouter);
+
 const routerList = {
-  path: '/main',
-  name: 'Main',
-  component: () => import('../views/Layout'),
+  name: 'Layout',
+  path: '/',
+  redirect: '/home',
+  component: () => import('../Layout'),
   children: [
     {
       path: '/home',
       name: 'Home',
       component: () => import('../views/Home')
-    },
-    {
-      path: '/chatRoom',
-      name: 'ChatRoom',
-      component: () => import(/* webpackChunkName: "聊天室" */ '../views/ChatRoom')
-    },
-    {
-      path: '/echartsDemo',
-      name: 'EchartsDemo',
-      component: () => import(/* webpackChunkName: "echarts demo" */ '../views/Echarts')
-    },
-    {
-      path: '/directive',
-      name: 'Directive',
-      component: () => import(/* webpackChunkName: "自定义指令" */ '../views/About/Directive')
-    },
-    {
-      path: '/ToDoList',
-      name: 'toDoList',
-      component: () => import(/* webpackChunkName: "ToDoList" */ '../views/About/ToDoList')
     }
   ]
 };
 
 const routes = [
   {
-    path: '/',
-    redirect: '/home'
-  },
-  {
     path: '/login',
     name: 'Login',
     component: () => import(/* webpackChunkName: "Login" */ '../views/Login')
   },
   routerList,
-
   {
     path: '*',
     name: 'nofind',
