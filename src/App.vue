@@ -7,7 +7,7 @@
 <script>
 export default {
   created() {
-    console.log("APP启动。。。");
+    console.log("APP启动。。。")
   }
 };
 </script>

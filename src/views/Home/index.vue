@@ -1,7 +1,7 @@
 <!--
  * @Date: 2021-04-09 11:06:25
  * @Author: wwm
- * @LastEditTime: 2021-11-22 16:37:09
+ * @LastEditTime: 2021-11-22 18:37:09
  * @LastEditors: wwm
  * @Description: ...
 -->
@@ -15,7 +15,8 @@ export default {
   data() {
     return {};
   },
-  created() {},
+  created() {
+  },
   mounted() {},
   methods: {}
 };
