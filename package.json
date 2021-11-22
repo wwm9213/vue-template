@@ -12,6 +12,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
     "axios": "^0.24.0",
     "core-js": "^3.6.5",
     "store": "^2.0.12",
