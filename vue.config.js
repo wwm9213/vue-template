@@ -30,5 +30,11 @@ module.exports = {
       ]
     }
   },
-  chainWebpack: (config) => {}
+  transpileDependencies: [
+    // 'weixin-units',
+    'vue-router'
+    // 'html2canvas',
+    // 'swiper',
+    // 'dom7'
+  ]
 };

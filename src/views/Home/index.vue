@@ -1,57 +1,27 @@
 <!--
  * @Date: 2021-04-09 11:06:25
  * @Author: wwm
- * @LastEditTime: 2021-11-20 16:10:39
+ * @LastEditTime: 2021-11-22 12:54:13
  * @LastEditors: wwm
  * @Description: ...
 -->
 <template>
-  <div class="home" ref="home"></div>
+  <div class="index" ref="index">index</div>
 </template>
 
 <script>
 export default {
-  name: "Home",
+  name: "index",
   data() {
     return {};
   },
-  created() {
-    const fn = ["a", "b", "c", "d"];
-    for (let index = 0; index < fn.length; index++) {
-      const el = fn[index];
-      this[el](
-        () => {
-          console.log("第一个回调函数", index, el);
-        },
-        () => {
-          console.log("第二个回调函数", index, el);
-        }
-      );
-    }
-  },
+  created() {},
   mounted() {},
-  methods: {
-    a(cb_1, cb_2) {
-      cb_1 && cb_1();
-      cb_2 && cb_2();
-    },
-    b(cb_1, cb_2) {
-      cb_1 && cb_1();
-      cb_2 && cb_2();
-    },
-    c(cb_1, cb_2) {
-      cb_1 && cb_1();
-      cb_2 && cb_2();
-    },
-    d(cb_1, cb_2) {
-      cb_1 && cb_1();
-      cb_2 && cb_2();
-    }
-  }
+  methods: {}
 };
 </script>
 <style lang="scss" scoped>
-.home {
+.index {
   width: 100%;
   height: 100%;
 
